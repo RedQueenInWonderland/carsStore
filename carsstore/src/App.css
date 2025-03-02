@@ -1,0 +1,171 @@
+/* .App {
+  text-align: center;
+} */
+
+/* For screens with a minimum width of 200px and up to 399px */
+@media (min-width: 200px) and (max-width: 600px) {
+  .input-group {
+    width: 100% !important;  /* Force width to 100% */
+  }
+}
+
+/* For screens with a minimum width of 400px and up to 999px */
+@media (min-width: 600px) and (max-width: 999px) {
+  .input-group {
+    width: 70% !important;  /* Force width to 50% */
+  }
+}
+
+/* For screens with a minimum width of 1000px and up */
+@media (min-width: 1000px) {
+  .input-group {
+    width: 30% !important;  /* Force width to 30% */
+  }
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* BannerTop */
+
+.custom-list-group .list-group-item {
+  border: none; 
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.custom-list-group .list-group-item:first-child {
+  border-right: 2px solid black; 
+  color: black;
+
+}
+
+.custom-list-group .list-group-item:nth-child(2) {
+  border-right: 2px solid black; 
+}
+
+.custom-list-group .list-group-item:nth-child(3) {
+  border-right: 2px solid black; 
+}
+
+.custom-list-group .list-group-item:last-child {
+  margin-right: 0 !important;
+  padding-right: 0 !important;
+}
+
+.hover-text {
+  color: #080607; 
+  /* text-decoration: underline;  */
+}
+.hover-text:hover {
+  color: #e97517; 
+  /* text-decoration: underline;  */
+}
+
+/*  */
+
+/* Custom width for input */
+
+/* When input is active (clicked/focused) */
+
+/* Remove Bootstrap default blue focus */
+.form-control:focus {
+  border-color: black !important;  /* Change border color to red */
+  box-shadow: 0 0 5px rgba(7, 6, 6, 0.5) !important; /* Optional red glow */
+  outline: none !important; /* Remove any additional outlines */
+}
+.form-control {
+  border-color: #e97517 !important;  /* Change border color to red */
+
+  outline: none !important; /* Remove any additional outlines */
+}
+.searchBtn:focus {
+  border-color: black !important;  /* Change border color to red */
+  box-shadow: 0 0 5px rgba(7, 6, 6, 0.5) !important; /* Optional red glow */
+  outline: none !important; /* Remove any additional outlines */
+}
+
+
+.searchBtn {
+  border-color: #e97517 !important;  /* Change border color to red */
+  outline: none !important; /* Remove any additional outlines */
+}
+
+#searchbtn1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0; /* Remove default padding */
+  width: 40px; /* Set desired button width */
+  height: 38px; /* Set desired button height */
+}
+
+#searchbtn1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the button */
+}
+
+
+/* nav */
+
+.hover-nav {
+  color: #ffffff; 
+  /* text-decoration: underline;  */
+}
+.hover-nav:hover {
+  color: #e97517; 
+  /* text-decoration: underline;  */
+}
+
+/* besidetop */
+.customhead {
+  background-color: #e97517;
+  color: #080607;
+}
+.bg-card-custom {
+  background-image: url('../public/images/SOne_index_bg_searchtype.jpg');
+  background-size: cover;
+  background-position: center;
+  height: auto;
+}
+
+
+
+
+
+
+
