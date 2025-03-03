@@ -1,5 +1,5 @@
 
-import '../assets/css/bootstrap.min.css'
+// import '../assets/css/bootstrap.min.css'
 import { useState } from 'react';
 // import sicon from '../../public/images/SOne_index_btsearch.jpg'
 

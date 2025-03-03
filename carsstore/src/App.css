@@ -151,6 +151,11 @@
   /* text-decoration: underline;  */
 }
 
+.backgroundNav {
+  background-color: #080607;
+}
+
+
 /* besidetop */
 .customhead {
   background-color: #e97517;
@@ -163,6 +168,42 @@
   height: auto;
 }
 
+.selectDrop:focus {
+  border-color: black !important;  /* Change border color to red */
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5) !important; /* Optional red glow */
+  outline: none !important; /* Remove any additional outlines */
+  width: 100%;
+  
+}
+.selectDrop {
+  border-color: #e97517 !important;  /* Change border color to red */
+  outline: none !important; /* Remove any additional outlines */
+  width: 100%;
+  margin-bottom: 1em;
+  /* text-align: left; */
+  text-align: left !important;
+}
+
+/* besidebottom */
+.selectDropText {
+  margin-bottom: 1.6em;
+  text-align: right !important;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .selectDropText {
+    text-align: left !important;
+  }
+}
+
+/* .selectDrop::after{
+  display: none !important;
+} */
+
+.backgroundCard {
+  background-color: #080607;
+
+}
 
 
 

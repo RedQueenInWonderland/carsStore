@@ -19,7 +19,7 @@
 .env.production.local
 
 #bootstarp
-/src/assets/js/bootstrap.bundle.min.js
+# /src/assets/js/bootstrap.bundle.min.js
 
 
 npm-debug.log*

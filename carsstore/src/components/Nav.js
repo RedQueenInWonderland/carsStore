@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import '../assets/css/bootstrap.min.css'
+// import '../assets/css/bootstrap.min.css'
 
 const Nav = () => {
 
@@ -49,19 +49,10 @@ const Nav = () => {
     return (
         <div >
 
-            <nav class="navbar navbar-expand-lg bg-dark">
-                {/* <div class="row"></div> */}
-                {/* <a class="navbar-brand" href="#">Product & Services</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button> */}  
-                  {/* <div className="container">
-
-                    
-                  </div> */}
+            <nav class="navbar navbar-expand-lg backgroundNav">
 
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    
+
                     <ul class="navbar-nav">
                         <li class="nav-item active">
                             <a class="nav-link" style={{ color: '#e97517' }} href="#">
@@ -76,7 +67,7 @@ const Nav = () => {
                                 <span class="sr-only">(current)</span></a>
 
                         </li>
-   
+
                         {menuItems.map(({ key, label }) => (
                             <li className="nav-item" key={key}>
                                 <a className="nav-link hover-nav" href="#">
@@ -95,85 +86,17 @@ const Nav = () => {
                                 </a>
                             </li>
                         ))}
-                        {/* <li class="nav-item">
-                            <a class="nav-link hover-nav" href="#">
-                                <img
-                                    src={hover2 ? "/images/SOne_index_menu02.png" : "/images/SOne_index_menu01.png"}
-                                    alt="SOne_index_menu01"
-                                    onMouseEnter={() => setHover2(true)}
-                                    onMouseLeave={() => setHover2(false)}
-                                    style={{ marginRight: '0.5em' }}
-                                />
-                                Promotions
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link hover-nav" href="#">
-                                <img
-                                    src={hover3 ? "/images/SOne_index_menu02.png" : "/images/SOne_index_menu01.png"}
-                                    alt="SOne_index_menu01"
-                                    onMouseEnter={() => setHover3(true)}
-                                    onMouseLeave={() => setHover3(false)}
-                                    style={{ marginRight: '0.5em' }}
-                                />
-                                News & Events
-
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link hover-nav" href="#">
-                                <img
-                                    src={hover4 ? "/images/SOne_index_menu02.png" : "/images/SOne_index_menu01.png"}
-                                    alt="SOne_index_menu01"
-                                    onMouseEnter={() => setHover4(true)}
-                                    onMouseLeave={() => setHover4(false)}
-                                    style={{ marginRight: '0.5em' }}
-                                />
-                                Safety Tips
-
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link hover-nav" href="#">
-                                <img
-                                    src={hover5 ? "/images/SOne_index_menu02.png" : "/images/SOne_index_menu01.png"}
-                                    alt="SOne_index_menu01"
-                                    onMouseEnter={() => setHover5(true)}
-                                    onMouseLeave={() => setHover5(false)}
-                                    style={{ marginRight: '0.5em' }}
-                                />
-                                FAQS
-
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-decoration-none hover-text" href="#">
-                                <img
-                                    src={hover6 ? "/images/SOne_index_menu02.png" : "/images/SOne_index_menu01.png"}
-                                    alt="SOne_index_menu01"
-                                    onMouseEnter={() => setHover6(true)}
-                                    onMouseLeave={() => setHover6(false)}
-                                    style={{ marginRight: '0.5em' }}
-                                />
-                                Location
-                            </a>
-                        </li> */}
 
                     </ul>
 
-                    <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-        >
-            <span className="navbar-toggler-icon"></span>
-        </button>
-
                 </div>
+                {/* Hamburger Menu md amd mobile size */}
+                <nav class="navbar navbar-dark backgroundNav">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </nav>
+                {/* Hamburger Menu close */}
 
                 <div class="d-flex flex-row flex-wrap align-items-end">
                     {images.map((image, index) => (

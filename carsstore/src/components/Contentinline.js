@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
-import '../assets/css/bootstrap.min.css'
+// import '../assets/css/bootstrap.min.css'
+
 
 const Contentinline = () => {
     

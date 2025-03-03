@@ -1,5 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import './assets/css/bootstrap.min.css'
+import './assets/js/bootstrap.bundle.min.js'
+
+
 
 // import Bannertop from './components/Bannertop';
 import Bannertop from './components/Bannertop';
@@ -9,6 +13,7 @@ import Footer from './components/Footer';
 import Nav from './components/Nav';
 import Besidetop from './components/Besidetop';
 import BannerS from './components/BannerS';
+import Besidebottom from './components/Besidebottom.js';
 
 
 
@@ -16,14 +21,29 @@ function App() {
   return (
     <div className="App">
       {/* <Bannertop/> */}
-      {/* <Nav/> */}
+      <Nav/>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-sm-100 col-md-3 col-lg-3" >
+          <div class="col-100 col-sm-100 col-md-100 col-lg-3" >
             <Besidetop />
 
           </div>
-          <div class="col-sm-100 col-md-9 col-lg-9" >
+          <div class="col-100 col-sm-100 col-md-100 col-lg-9" >
+            {/* <BannerS /> */}
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-100 col-sm-100 col-md-100 col-lg-3" >
+            <Besidebottom/>
+
+          </div>
+          <div class="col-100 col-sm-100 col-md-100 col-lg-12" >
+            {/* <BannerS /> */}
+
+          </div>
+          <div class="col-100 col-sm-100 col-md-100 col-lg-3" >
             {/* <BannerS /> */}
 
           </div>
