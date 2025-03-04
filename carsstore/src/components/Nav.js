@@ -1,15 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
-// import '../assets/css/bootstrap.min.css'
 
 const Nav = () => {
-
-    // const [hover, setHover] = useState(false);
-    // const [hover2, setHover2] = useState(false);
-    // const [hover3, setHover3] = useState(false);
-    // const [hover4, setHover4] = useState(false);
-    // const [hover5, setHover5] = useState(false);
-    // const [hover6, setHover6] = useState(false);
 
     const [hoverIndex, setHoverIndex] = useState(null);
 
@@ -49,22 +41,20 @@ const Nav = () => {
     return (
         <div >
 
-            <nav class="navbar navbar-expand-lg backgroundNav">
+            <nav className="navbar navbar-expand-lg backgroundNav">
 
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div className="collapse navbar-collapse" id="navbarNav">
 
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" style={{ color: '#e97517' }} href="#">
+                    <ul className="navbar-nav">
+                        <li className="nav-item active">
+                            <a className="nav-link" style={{ color: '#e97517' }} href="#">
                                 <img
                                     src={"/images/SOne_index_menu02.png"}
                                     alt="SOne_index_menu01"
-                                    // onMouseEnter={() => setHover(true)}
-                                    // onMouseLeave={() => setHover(false)}
                                     style={{ marginRight: '0.5em' }}
                                 />
                                 Product & Services
-                                <span class="sr-only">(current)</span></a>
+                                <span className="sr-only">(current)</span></a>
 
                         </li>
 
@@ -91,25 +81,24 @@ const Nav = () => {
 
                 </div>
                 {/* Hamburger Menu md amd mobile size */}
-                <nav class="navbar navbar-dark backgroundNav">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                <nav className="navbar navbar-dark backgroundNav">
+                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
                     </button>
                 </nav>
                 {/* Hamburger Menu close */}
 
-                <div class="d-flex flex-row flex-wrap align-items-end">
+                <div className="d-flex flex-row flex-wrap align-items-end">
                     {images.map((image, index) => (
                         //   <div class="col-lg-2 col-md-4 col-sm-6 col-12">
-                        <div>
+                        <div key={image.img}>
                             <img
-                                key={index}
+                                // key={index}
                                 src={hoverIndex === index ? image.hover : image.img}
                                 alt={`image ${index + 1}`}
                                 onMouseEnter={() => handleMousehover(index)}
                                 onMouseLeave={handleMouse}
                                 style={{ width: '1.7em', marginLeft: '1em' }}
-
                             />
                         </div>
                         //   </div>
